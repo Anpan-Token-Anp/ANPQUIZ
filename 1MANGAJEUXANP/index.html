@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manga Quiz Airdrop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left Column: Leaderboard -->
+    <div class="sidebar left">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboard"></ul>
+    </div>
+
+    <!-- Center Column: Quiz -->
+    <div class="quiz-container">
+      <div class="quiz-box" id="quiz-box">
+        <img src="anpan.png" alt="Logo" class="logo" />
+        <h1>Manga Quiz</h1>
+        <div id="question-area">
+          <p>Loading questions...</p>
+        </div>
+        <div id="answer-buttons"></div>
+        <div id="navigation">
+          <button id="next-btn" class="hidden">Next</button>
+        </div>
+        <div id="result" class="hidden"></div>
+      </div>
+    </div>
+
+    <!-- Right Column: Wallet & Pseudo -->
+    <div class="sidebar right">
+      <h2>Enter Pseudo</h2>
+      <input type="text" id="pseudo" placeholder="Your name" />
+      <button id="save-pseudo">OK</button>
+
+      <h2>Connect Wallet</h2>
+      <button id="connect-wallet">Connect</button>
+      <p id="wallet-address"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
